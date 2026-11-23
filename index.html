@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Política de Privacidade — Notaê</title>
+<style>body{font-family:system-ui,Segoe UI,Roboto,sans-serif;max-width:760px;margin:2rem auto;padding:0 1rem;line-height:1.6;color:#1f2328}h1{font-size:1.8rem}h2{margin-top:2rem;font-size:1.25rem;border-bottom:1px solid #d0d7de;padding-bottom:.3rem}code{background:#f3f4f6;padding:1px 5px;border-radius:4px}hr{border:0;border-top:1px solid #d0d7de}</style>
+</head><body>
+<h1>Política de Privacidade — Notaê</h1>
+<p><strong>Última atualização:</strong> 23 de novembro de 2026<br>
+<strong>Aplicativo:</strong> Notaê (<code>com.notasia.app</code>)<br>
+<strong>Contato:</strong> notae.suporte@gmail.com</p>
+<p>O <strong>Notaê</strong> foi projetado com arquitetura <em>offline-first</em> e privacidade por padrão. Esta política explica quais dados são tratados, para qual finalidade e como você mantém controle sobre eles. O aplicativo é destinado a maiores de 18 anos.</p>
+<hr />
+<h2>1. Dados armazenados localmente no seu dispositivo</h2>
+<ul>
+<li>Suas notas manuscritas, cadernos, pastas, tabelas, PDFs importados, imagens e gravações de áudio ficam armazenados <strong>localmente</strong>, no armazenamento privado do aplicativo.</li>
+<li>Chaves de API inseridas por você (Anthropic Claude e/ou Google Gemini) são criptografadas com <strong>Android Keystore (AES-256-GCM)</strong> e só são enviadas ao provedor que você escolheu.</li>
+<li>O backup automático do sistema em nuvem está desativado (<code>allowBackup="false"</code>).</li>
+<li>O Notaê não contém anúncios e não usa ferramentas de análise de uso (analytics) nem rastreadores de terceiros.</li>
+</ul>
+<h2>2. Sincronização opcional com Google Drive</h2>
+<ul>
+<li>A sincronização é <strong>100% opcional</strong> e só é ativada quando você faz login com sua conta Google.</li>
+<li>O app opera exclusivamente sobre a pasta dedicada <strong><code>Meu Drive / Notas IA</code></strong> (pastas, cadernos, notas, PDFs e imagens). Arquivos fora dessa pasta não são lidos, modificados nem excluídos.</li>
+<li>Exclusões sincronizadas movem os itens apenas para a <strong>Lixeira do Google Drive</strong>.</li>
+<li>Tokens de acesso OAuth2 ficam apenas em memória RAM durante a sessão e são revogados quando você desconecta a conta.</li>
+<li>O uso das informações recebidas das APIs do Google pelo Notaê segue a <strong>Política de Dados do Usuário dos Serviços de API do Google</strong>, incluindo os requisitos de <strong>Uso Limitado (Limited Use)</strong>.</li>
+</ul>
+<h2>3. Assistente de Inteligência Artificial (IA generativa)</h2>
+<p>O envio de conteúdo para IA só ocorre <strong>quando você aciona explicitamente</strong> o painel de IA (um recorte visual da página/PDF ou uma pergunta digitada).</p>
+<ul>
+<li><strong>IA do Notaê:</strong> você entra com sua conta Google (escopos <code>email</code> e <code>profile</code>). O trecho selecionado é enviado por HTTPS ao nosso servidor intermediário (hospedado na Cloudflare), que o encaminha à API do <strong>Google Gemini</strong>. <strong>O conteúdo das suas notas e imagens não é armazenado</strong> no servidor.</li>
+<li><strong>Dados que o servidor mantém para operar o serviço:</strong> identificador anônimo derivado da sua conta Google (hash), seu e-mail (apenas para reconhecer concessões de acesso e o plano contratado), contadores de uso para limites diários e proteção contra abuso, e a validação do seu plano.</li>
+<li><strong>Chave própria (opcional):</strong> os dados vão diretamente da sua conta ao provedor escolhido (Google Gemini ou Anthropic Claude), sujeitos à política de privacidade dele.</li>
+<li><strong>Aviso:</strong> respostas de IA podem conter imprecisões; revise cálculos, datas e referências importantes.</li>
+</ul>
+<h2>4. Assinatura Notaê Pro</h2>
+<ul>
+<li>A assinatura é processada pelo <strong>Google Play</strong>; o Notaê <strong>não recebe nem armazena dados de cartão ou pagamento</strong>.</li>
+<li>Para liberar os recursos do plano, o app envia ao nosso servidor o identificador do produto e o token da compra, que é validado diretamente na API do Google Play.</li>
+<li>Você gerencia ou cancela a assinatura a qualquer momento em Google Play → Pagamentos e assinaturas.</li>
+</ul>
+<h2>5. Permissões do dispositivo</h2>
+<ul>
+<li><strong>Internet e estado da rede:</strong> usadas apenas para chamadas à IA, validação da assinatura e sincronização opcional com o Drive.</li>
+<li><strong>Microfone (<code>RECORD_AUDIO</code>):</strong> solicitado somente quando você escolhe <em>Inserir → Gravar áudio</em> em uma nota. O áudio fica salvo na sua nota e nunca é gravado em segundo plano. Se a sincronização com o Drive estiver ativa, anexos da nota podem ser sincronizados com a sua própria pasta.</li>
+</ul>
+<h2>6. Compartilhamento de dados</h2>
+<p>Não vendemos nem compartilhamos seus dados para publicidade. Os dados só chegam a prestadores de serviço necessários ao funcionamento que você solicitou: Google (login, Drive, Play e Gemini) e Cloudflare (hospedagem do servidor intermediário).</p>
+<h2>7. Exclusão de dados e controle do usuário</h2>
+<ul>
+<li>Você pode excluir qualquer nota, pasta ou áudio a qualquer momento no app.</li>
+<li>Você pode desconectar o Google Drive e revogar o acesso em <strong>Google Drive → Desconectar conta e revogar acesso</strong> ou em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Suas notas locais permanecem.</li>
+<li>Desinstalar o app remove todos os dados locais.</li>
+<li>Para <strong>solicitar a exclusão dos dados mantidos no servidor</strong> (identificador, e-mail e contadores de uso), escreva para <strong>notae.suporte@gmail.com</strong> a partir do e-mail da sua conta. Respondemos em até 30 dias.</li>
+</ul>
+<h2>8. Crianças</h2>
+<p>O Notaê não é direcionado a menores de 18 anos e não coleta intencionalmente dados de crianças.</p>
+<h2>9. Alterações</h2>
+<p>Podemos atualizar esta política. A data de "Última atualização" no topo indica a versão vigente.</p>
+<h2>10. Contato</h2>
+<p>Dúvidas ou solicitações sobre privacidade: <strong>notae.suporte@gmail.com</strong>.</p>
+</body></html>
